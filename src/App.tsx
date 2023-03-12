@@ -15,10 +15,10 @@ function App() {
     console.log("App rendering")
     return (
         <div>
-            {/*<PageTitle title={"This is component"}/>*/}
-            {/*<PageTitle title={"My friend"}/>*/}
-            {/*Article 1*/}
-            {/*<Ratting value={3}/>*/}
+            <PageTitle title={"This is component"}/>
+            <PageTitle title={"My friend"}/>
+            Article 1
+            <Ratting value={3}/>
             <Accordion titleValue={"Menu"} collapsed={true}/>
             <Accordion titleValue={"Users"} collapsed={false}/>
             Article 2
