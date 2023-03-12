@@ -32,6 +32,7 @@ function App() {
         </div>
     );
 }
+
  type PageTitlePropsType = {
     title: string
  }
