@@ -5,7 +5,7 @@ type RattingPropsType = {
     value: number
 }
 export function Ratting(props: RattingPropsType) {
-    console.log("Ratting rendering")
+    console.log("UncontrolledRatting rendering")
     return (
         <div>
             <Star selected={props.value > 0}/>

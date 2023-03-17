@@ -4,6 +4,7 @@ import Accordion from "./components/Accordion/Accordion";
 import {Ratting} from "./ratting/Ratting";
 import {OnOff} from "./components/OnOff/OnOff";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledRatting} from "./UncontrolledRetting/UncontrolledRatting";
 
 function Hello() {
 
@@ -16,28 +17,29 @@ function Hello() {
 function App(props:any) {
     console.log("App rendering")
     return (
-        <div>
+        <div className={"App"}>
 
             <OnOff/>
 
             <UncontrolledAccordion titleValue={"Menu"}/>
-            <UncontrolledAccordion titleValue={"Users"}/>
+            <UncontrolledRatting />
+            {/*<UncontrolledAccordion titleValue={"Users"}/>*/}
             {/*<OnOff on={true}/>*/}
             {/*<OnOff on={false}/>*/}
             {/*<PageTitle title={"This is component"}/>*/}
             {/*<PageTitle title={"My friend"}/>*/}
             {/*Article 1*/}
-            {/*<Ratting value={3}/>*/}
-            {/*<Accordion titleValue={"Menu"} collapsed={true}/>*/}
-            {/*<Accordion titleValue={"Users"} collapsed={false}/>*/}
+            {/*<UncontrolledRatting value={3}/>*/}
+            <Accordion titleValue={"Menu"} collapsed={true}/>
+            <Accordion titleValue={"Users"} collapsed={false}/>
             {/*Article 2*/}
 
-            {/*<Ratting value={0}/>*/}
-            {/*<Ratting value={1}/>*/}
-            {/*<Ratting value={2}/>*/}
-            {/*<Ratting value={3}/>*/}
-            {/*<Ratting value={4}/>*/}
-            {/*<Ratting value={5}/>*/}
+            {/*<UncontrolledRatting value={0}/>*/}
+            <Ratting value={1}/>
+            {/*<UncontrolledRatting value={2}/>*/}
+            {/*<UncontrolledRatting value={3}/>*/}
+            {/*<UncontrolledRatting value={4}/>*/}
+            {/*<UncontrolledRatting value={5}/>*/}
         </div>
     );
 }
