@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
-import Accordion from "./components/Accordion/Accordion";
-import {Ratting, RattingValueType} from "./ratting/Ratting";
+import {Accordion} from "./components/Accordion/Accordion";
+import {Ratting, RattingValueType} from "./components/ratting/Ratting";
 import {OnOff} from "./components/OnOff/OnOff";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRatting} from "./UncontrolledRetting/UncontrolledRatting";

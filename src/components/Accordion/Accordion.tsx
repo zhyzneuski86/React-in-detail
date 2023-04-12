@@ -1,5 +1,5 @@
 import React from "react";
-import {RattingValueType} from "../../ratting/Ratting";
+import {RattingValueType} from "../ratting/Ratting";
 type AccordionPropsType={
     titleValue: string
     collapsed: boolean
@@ -7,7 +7,7 @@ type AccordionPropsType={
 
 }
 
-function Accordion(props: AccordionPropsType) {
+export function Accordion(props: AccordionPropsType) {
     console.log("UncontrolledAccordion rendering")
 
         return (
@@ -25,7 +25,7 @@ type AccordionTitlePropsType={
 }
 function AccordionTitle(props: AccordionTitlePropsType) {
     console.log("AccordionTitle rendering")
-    return <h3 onClick={props.onChange}>--{props.title}--</h3>
+    return <h3 onClick={(e)=>props.onChange()}>--{props.title}--</h3>
 }
 
 function AccordionBody() {
@@ -39,4 +39,3 @@ function AccordionBody() {
         </ul>
     )
 }
-export default Accordion;
