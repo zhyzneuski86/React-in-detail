@@ -27,7 +27,7 @@ function App(props: any) {
             {/*<OnOff on={switchOn} onChange={setSwitchOn} />*/}
             <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
             {/*<UncontrolledAccordion titleValue={"Menu"}/>*/}
-            <UncontrolledRatting/>
+            {/*<UncontrolledRatting/>*/}
             <UncontrolledAccordion titleValue={"Users"}/>
             {/*<OnOff on={true}/>*/}
             {/*<OnOff on={false}/>*/}
