@@ -1,6 +1,6 @@
 import React from "react";
-import {Simulate} from "react-dom/test-utils";
-import select = Simulate.select;
+
+
 export type RattingValueType = 0 | 1 | 2 | 3 | 4 | 5
 
 type RattingPropsType = {

@@ -3,7 +3,7 @@ import {Ratting, RattingValueType} from "./Ratting";
 import {Meta} from "@storybook/react";
 
 const meta: Meta<typeof Ratting> = {
-    title: 'Ratting',
+    title: 'Ratting ',
     component: Ratting,
 };
 

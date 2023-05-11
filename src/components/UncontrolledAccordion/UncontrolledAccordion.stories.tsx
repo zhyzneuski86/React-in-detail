@@ -11,5 +11,5 @@ const meta: Meta <typeof UncontrolledAccordion> = {
 export default meta;
 
 export const ModeChange = () => {
-    return < UncontrolledAccordion titleValue={'Users'}/>
+    return <UncontrolledAccordion titleValue={'Users'}/>
 }
