@@ -24,17 +24,32 @@ function App(props: any) {
     return (
         <div className={"App"}>
 
-
-            {/*<UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}*/}
-
+            {/*<OnOff on={switchOn} onChange={setSwitchOn} />*/}
+            <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
+            {/*<UncontrolledAccordion titleValue={"Menu"}/>*/}
+            {/*<UncontrolledRatting/>*/}
             <UncontrolledAccordion titleValue={"Users"}/>
+            {/*<OnOff on={true}/>*/}
+            {/*<OnOff on={false}/>*/}
+            {/*<PageTitle title={"This is component"}/>*/}
+            {/*<PageTitle title={"My friend"}/>*/}
+            {/*Article 1*/}
+            {/*<UncontrolledRatting value={3}/>*/}
             {/*<Accordion titleValue={"Menu"}*/}
             {/*           collapsed={accordionCollapsed}*/}
             {/*           onChange={() => {*/}
             {/*               setAccordionCollapsed(!accordionCollapsed)*/}
             {/*           }}/>*/}
+            {/*<Accordion titleValue={"Users"} collapsed={false}/>*/}
+            {/*Article 2*/}
 
-            {/*<Ratting value={ratingValue} onClick={setRatingValue}/>*/}
+            {/*<UncontrolledRatting value={0}/>*/}
+            <Ratting value={ratingValue}
+                     onClick={setRatingValue}/>
+            {/*<UncontrolledRatting value={2}/>*/}
+            {/*<UncontrolledRatting value={3}/>*/}
+            {/*<UncontrolledRatting value={4}/>*/}
+            {/*<UncontrolledRatting value={5}/>*/}
         </div>
     );
 }
